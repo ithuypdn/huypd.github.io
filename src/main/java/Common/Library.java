@@ -29,7 +29,12 @@ public class Library {
         }
         return a;
     }
-
+    public String getValue(String msg) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print(msg);
+        return sc.nextLine().trim();
+    }
+            
     public int[] createArray(int size_Array) {
         int[] array = new int[size_Array];
         Random rd = new Random();

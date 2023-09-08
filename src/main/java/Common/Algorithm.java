@@ -74,11 +74,11 @@ public class Algorithm {
         }
     }*/
     public int binarySearch(int[] arr, int target) {
-        int left = 0;
-        int right = arr.length - 1;
+        int left = 0; //0
+        int right = arr.length - 1; //7
 
         while (left <= right) {
-            int mid = left + (right - left) / 2;
+            int mid = left + (right - left) / 2; //mid = 3
 
             if (arr[mid] == target) {
                 return mid;
@@ -88,7 +88,13 @@ public class Algorithm {
                 right = mid - 1;
             }
         }
-
+        return -1; // target not found
+    }
+    // 1 2 3 4 5 7 8 9
+    public int linearSearch(int[] arr, int target) {
+        for (int i = 0; i < arr.length; i++) 
+            if (arr[i] == target)
+                return i;
         return -1; // target not found
     }
 }

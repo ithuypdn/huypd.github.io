@@ -11,4 +11,5 @@
         <maven.compiler.target>17</maven.compiler.target>
         <exec.mainClass>file.project1.Project1</exec.mainClass>
     </properties>
+    <name>Project2</name>
 </project>
